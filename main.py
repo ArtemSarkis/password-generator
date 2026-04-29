@@ -40,7 +40,7 @@ def generate_key():
         print("❌ Допустимые значения: 128 или 256!")
         return
     key = ''.join(random.choice('0123456789abcdef') for _ in range(int(bits) // 4))
-    print(f"✅ Ключ сгенерирован: {key}")
+    print(f"✅ Ваш ключ готов: {key}")
     save_history({"type": "key", "value": key, "bits": int(bits)})
 
 def check_strength():
