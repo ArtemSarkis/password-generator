@@ -66,7 +66,7 @@ def view_history():
     if not history:
         print("История пуста.")
         return
-    print(f"Всего записей: {len(history)}")
+    print(f"Всего записей в истории: {len(history)}")
     print("-" * 30)
     for i, entry in enumerate(history, 1):
         if entry["type"] == "password":
