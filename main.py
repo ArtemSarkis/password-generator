@@ -29,7 +29,7 @@ def generate_password():
     if use_special == "да":
         chars += string.punctuation
     password = ''.join(random.choice(chars) for _ in range(length))
-    print(f"✅ Пароль успешно сгенерирован: {password}")
+    print(f"✅ Пароль создан успешно: {password}")
     print(f"   Длина: {length} | Спецсимволы: {'да' if use_special == 'да' else 'нет'}")
     save_history({"type": "password", "value": password, "length": length})
 
