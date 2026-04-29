@@ -58,7 +58,7 @@ def check_strength():
     if any(c in string.punctuation for c in password): score += 1
     levels = {6: "🟢 Очень надёжный", 5: "🟡 Надёжный", 4: "🟠 Средний", 3: "🔴 Слабый"}
     level = levels.get(score, "🔴 Очень слабый")
-    print(f"Уровень: {level} — счёт {score}/6")
+    print(f"Результат проверки: {level} | Баллов: {score} из 6")
 
 def view_history():
     print("\n=== ИСТОРИЯ ГЕНЕРАЦИЙ ===")
